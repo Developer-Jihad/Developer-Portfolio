@@ -39,7 +39,7 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6"
           >
-            Let's Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Together</span>
+            Let&apos;s Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Together</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 1, y: 20 }}

@@ -1,11 +1,9 @@
-"use client";
-import { useState } from "react";
-import Container from "@/app/components/ui/Container";
+
 import FeaturedBlog from "@/app/components/blog/FeaturedBlog";
 import BlogGrid from "@/app/components/blog/BlogGrid";
 import { getBlogs } from "@/app/utils/getData";
 
-async function BlogPage() {
+const BlogPage = async () => {
   const blogs = await getBlogs();
 
   return (
@@ -28,6 +26,6 @@ async function BlogPage() {
       <BlogGrid blogs={blogs} />
     </div>
   );
-}
+};
 
 export default BlogPage; 

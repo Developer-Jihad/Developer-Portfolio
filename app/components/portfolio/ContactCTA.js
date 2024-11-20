@@ -19,7 +19,7 @@ const ContactCTA = () => {
             Ready to Start Your Project?
           </h2>
           <p className="text-gray-400 mb-8">
-            I'm currently available for freelance work. Let's discuss your project
+            I'm currently available for freelance work. Let&apos;s discuss your project
             and create something amazing together.
           </p>
           <motion.div
