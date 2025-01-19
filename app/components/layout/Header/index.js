@@ -49,7 +49,7 @@ const Header = ({ isScrolled }) => {
                 flex items-center justify-center text-white font-bold text-xl">
                 W
               </div>
-              <span className="text-xl font-bold text-white hidden sm:block">Developer's Portfolio</span>
+              <span className="text-xl font-bold text-white hidden sm:block">Portfolio</span>
             </motion.div>
           </Link>
 

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { navigationLinks } from '@/app/constants/navigation';
-import ThemeToggle from './ThemeToggle';
+// import ThemeToggle from './ThemeToggle';
 
 const menuVariants = {
   hidden: {
@@ -84,7 +84,7 @@ const MobileMenu = ({ currentPath, onClose }) => {
           custom={navigationLinks.length}
           className="mt-8"
         >
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
         </motion.div>
       </div>
 
