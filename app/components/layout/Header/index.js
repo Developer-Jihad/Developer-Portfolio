@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import Navigation from './Navigation';
 import MobileMenu from './MobileMenu';
-import ThemeToggle from './ThemeToggle';
+// import ThemeToggle from './ThemeToggle';
 
 const Header = ({ isScrolled }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,17 +47,17 @@ const Header = ({ isScrolled }) => {
             >
               <div className="relative w-8 h-8 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 
                 flex items-center justify-center text-white font-bold text-xl">
-                J
+                W
               </div>
-              <span className="text-xl font-bold text-white hidden sm:block">Jihad</span>
+              <span className="text-xl font-bold text-white hidden sm:block">Developer's Portfolio</span>
             </motion.div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             <Navigation currentPath={pathname} />
-            <div className="w-px h-6 bg-white/10" /> {/* Divider */}
-            <ThemeToggle />
+            {/* <div className="w-px h-6 bg-white/10" />  */}
+            {/* <ThemeToggle /> */}
           </div>
 
           {/* Mobile Menu Button */}

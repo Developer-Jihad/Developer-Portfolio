@@ -13,7 +13,7 @@ const Testimonials = dynamic(() => import('./components/home/Testimonials'));
 const Contact = dynamic(() => import('./components/home/Contact'));
 
 export const metadata = {
-  title: 'Jihad - Full Stack Developer',
+  title: 'Full Stack Web Developer',
   description: 'Full-stack developer specializing in building exceptional digital experiences',
 };
 
