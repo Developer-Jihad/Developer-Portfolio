@@ -1,9 +1,7 @@
 "use client";
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import Container from '../ui/Container';
-import { useAnimateInView } from '@/app/hooks/useAnimateInView';
 import { images } from '@/app/constants/images';
 
 const featuredPost = {
@@ -21,14 +19,11 @@ const featuredPost = {
 };
 
 const BlogHero = () => {
-  const { ref, controls } = useAnimateInView();
 
   return (
-    <section className="py-20" ref={ref}>
+    <section className="py-20">
       <Container>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={controls}
+        <div
           className="text-center mb-12"
         >
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -37,13 +32,10 @@ const BlogHero = () => {
           <p className="text-gray-400 max-w-2xl mx-auto">
             Insights, thoughts, and discoveries from my journey in web development.
           </p>
-        </motion.div>
+        </div>
 
         {/* Featured Post */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={controls}
-          transition={{ delay: 0.2 }}
+        <div
           className="relative rounded-2xl overflow-hidden"
         >
           <Link href={`/blog/${featuredPost.id}`}>
@@ -95,7 +87,7 @@ const BlogHero = () => {
               </div>
             </div>
           </Link>
-        </motion.div>
+        </div>
       </Container>
     </section>
   );
