@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="relative mt-20">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-purple-500/5 to-black/20 -z-10" />
-      <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0))] -z-10" />
+      {/* <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0))] -z-10" /> */}
 
       {/* Decorative Top Border */}
       <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />

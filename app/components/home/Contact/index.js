@@ -12,7 +12,7 @@ const Contact = () => {
     <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden" ref={ref}>
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 -z-10" />
-      <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] -z-10" />
+      {/* <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] -z-10" /> */}
       
       {/* Animated background circles - Adjusted for better mobile view */}
       <div className="absolute top-1/4 left-0 w-48 sm:w-72 lg:w-96 h-48 sm:h-72 lg:h-96 bg-purple-500/20 rounded-full blur-[80px] sm:blur-[120px] -z-10" />

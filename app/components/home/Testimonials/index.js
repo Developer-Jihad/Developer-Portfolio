@@ -11,7 +11,7 @@ const Testimonials = () => {
     <section className="relative py-24 overflow-hidden" ref={ref}>
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-purple-500/5 -z-10" />
-      <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] -z-10" />
+      {/* <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] -z-10" /> */}
       
       {/* Animated background circles */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-purple-500/20 rounded-full blur-[120px] -z-10" />
