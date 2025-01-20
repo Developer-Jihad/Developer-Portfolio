@@ -7,8 +7,8 @@ const ContactInfo = () => (
       {contactInfo.map((info) => (
         <div key={info.label} className="flex items-center gap-3 md:gap-4">
           <div className="p-2 rounded-lg md:rounded-xl bg-white/5 shrink-0">
-            <div className="text-violet-500">
-              <info.icon />
+            <div className="text-violet-500 ">
+              <info.icon/>
             </div>
           </div>
           <div className="min-w-0">

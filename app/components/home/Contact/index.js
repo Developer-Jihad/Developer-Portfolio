@@ -45,7 +45,7 @@ const Contact = () => {
             initial={{ opacity: 1, y: 20 }}
             animate={controls}
             transition={{ delay: 0.3 }}
-            className="text-white/60 text-sm sm:text-base lg:text-lg px-4"
+            className="text-white/60 text-sm sm:text-base lg:text-lg pb-4 md:px-4"
           >
             Have a project in mind or want to collaborate? Feel free to reach out.
             I'm always open to discussing new opportunities and ideas.
@@ -64,11 +64,11 @@ const Contact = () => {
 
           {/* Main Content */}
           <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl 
-            border border-white/10 p-4 sm:p-6 md:p-8 lg:p-12">
+            border border-white/10 p-2 sm:p-6 md:p-8 lg:p-12">
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16">
               {/* Contact Form */}
               <motion.div
-                initial={{ opacity: 1, x: -20 }}
+                initial={{ opacity: 1 }}
                 animate={controls}
                 transition={{ delay: 0.4 }}
                 className="order-2 lg:order-1"
@@ -78,7 +78,7 @@ const Contact = () => {
 
               {/* Contact Info */}
               <motion.div
-                initial={{ opacity: 1, x: 20 }}
+                initial={{ opacity: 1 }}
                 animate={controls}
                 transition={{ delay: 0.5 }}
                 className="order-1 lg:order-2"

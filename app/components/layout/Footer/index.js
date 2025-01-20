@@ -30,7 +30,7 @@ const Footer = () => {
                 >
                   <div className="relative w-10 h-10 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 
                     flex items-center justify-center text-white font-bold text-xl">
-                    J
+                    🪐
                   </div>
                   <span className="text-2xl font-bold bg-gradient-to-r from-white to-white/60 bg-clip-text 
                     text-transparent">Jihad</span>

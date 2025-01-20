@@ -1,8 +1,6 @@
 import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
 import LoadingSpinner from './components/ui/LoadingSpinner';
-import Link from "next/link";
-import { motion } from "framer-motion";
 
 // Dynamic imports for better performance
 const Hero = dynamic(() => import('./components/home/Hero'));
@@ -13,7 +11,7 @@ const Testimonials = dynamic(() => import('./components/home/Testimonials'));
 const Contact = dynamic(() => import('./components/home/Contact'));
 
 export const metadata = {
-  title: 'Full Stack Web Developer',
+  title: 'Developers Portfolio',
   description: 'Full-stack developer specializing in building exceptional digital experiences',
 };
 

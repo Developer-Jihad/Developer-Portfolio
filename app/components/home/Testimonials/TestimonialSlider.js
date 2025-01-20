@@ -49,7 +49,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="relative px-4 sm:px-6 md:px-8">
+    <div className="relative sm:px-6 md:px-8">
       {/* Decorative Elements */}
       <div className="absolute -top-12 -right-12 w-24 h-24 bg-gradient-to-r from-purple-500/30 
         to-pink-500/30 rounded-full blur-xl hidden sm:block" />

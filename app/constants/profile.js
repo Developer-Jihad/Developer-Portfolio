@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 export const profileData = {
   name: 'Jihad',
   title: 'Full Stack Developer',
-  image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop', // Replace with a specific Unsplash image URL
+  image: 'https://plus.unsplash.com/premium_photo-1666299356306-b65a7dd95dae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
   stats: [
     { label: 'Years Experience', value: '3+' },
     { label: 'Projects Done', value: '50+' },

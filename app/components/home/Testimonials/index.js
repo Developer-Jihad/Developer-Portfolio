@@ -55,7 +55,7 @@ const Testimonials = () => {
           initial={{ opacity: 1, y: 20 }}
           animate={controls}
           transition={{ delay: 0.4 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
           <TestimonialSlider />
         </motion.div>

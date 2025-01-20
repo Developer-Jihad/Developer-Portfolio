@@ -55,7 +55,7 @@ const About = () => {
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Profile Section */}
           <motion.div
-            initial={{ opacity: 1, x: -20 }}
+            initial={{ opacity: 1 }}
             animate={controls}
             transition={{ delay: 0.4 }}
             className="lg:col-span-1"
@@ -65,7 +65,7 @@ const About = () => {
 
           {/* Experience & Education */}
           <motion.div
-            initial={{ opacity: 1, x: 20 }}
+            initial={{ opacity: 1 }}
             animate={controls}
             transition={{ delay: 0.5 }}
             className="lg:col-span-2 space-y-12"

@@ -19,9 +19,11 @@ const ContactPage = () => {
             <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse" />
             <span className="text-white/70 text-sm">Available for new opportunities</span>
           </div>
-          <h1 className="text-gray-400 text-4xl md:text-7xl font-bold mb-6">
-            Let&apos;s Connect
-          </h1>
+          <h1 className="text-4xl md:text-7xl font-bold mb-6">
+          Let&apos;s
+        <span className="bg-gradient-to-r from-purple-500 via-red-400 to-pink-400 text-transparent bg-clip-text"> Connect</span>
+      </h1>
+          
           <p className="text-gray-500 text-base md:text-lg max-w-2xl mx-auto">
             I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your visions.
           </p>

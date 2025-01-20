@@ -101,7 +101,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="order-1 lg:order-2 relative flex justify-center lg:justify-end"
+            className="order-1 lg:order-2 relative flex justify-center lg:justify-end px-4"
           >
             <div className="relative w-full max-w-[500px] aspect-square">
               {/* Background blur effect */}

@@ -19,20 +19,11 @@ const SocialLinks = () => (
               className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition duration-300"
               style={{ boxShadow: `0 0 30px ${social.color}30` }} 
             />
-            <OptimizedImage
-              src={social.icon}
-              alt={social.name}
-              width={28}
-              height={28}
-              className="relative z-10 transform group-hover:scale-110 transition duration-300"
-            />
+            <social.icon />
           </div>
           <div className="text-center">
             <p className="text-white group-hover:text-white/90 font-medium text-sm md:text-base">
               {social.name}
-            </p>
-            <p className="text-white/40 text-xs md:text-sm mt-0.5 md:mt-1">
-              {social.category}
             </p>
           </div>
         </Link>
