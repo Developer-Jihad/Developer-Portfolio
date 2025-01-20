@@ -8,11 +8,11 @@ import LoadingSpinner from '../ui/LoadingSpinner';
 import { useScrollPosition } from '@/app/hooks/useScrollPosition';
 import { trackPageView } from '@/app/lib/analytics';
 
-const pageTransition = {
-  // hidden: { opacity: 0, y: 20 },
-  enter: { opacity: 1, y: 0 },
-  // exit: { opacity: 0, y: -20 }
-};
+// const pageTransition = {
+//   hidden: { opacity: 0, y: 20 },
+//   enter: { opacity: 1, y: 0 },
+//   exit: { opacity: 0, y: -20 }
+// };
 
 const Layout = ({ children }) => {
   const pathname = usePathname();
@@ -34,18 +34,18 @@ const Layout = ({ children }) => {
         <motion.main
           key={pathname}
           // initial="hidden"
-          animate="enter"
+          // animate="enter"
           // exit="exit"
-          variants={pageTransition}
-          transition={{ duration: 0 }}
-          className="pt-20 pb-16 container mx-auto px-4 sm:px-6 lg:px-8"
+          // variants={pageTransition}
+          // transition={{ duration: 0 }}
+          className="pt-20 pb-16 container mx-auto px-4 sm:px-6 lg:px-8 min-h-[90vh]"
         >
           <Suspense fallback={<LoadingSpinner />}>
             {children}
           </Suspense>
         </motion.main>
       </AnimatePresence>
-
+      
       <Footer />
     </div>
   );
