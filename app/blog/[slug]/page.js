@@ -1,3 +1,6 @@
+
+"use client"
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getBlogBySlug } from "@/app/utils/getData";
@@ -12,6 +15,10 @@ export default async function BlogPost({ params }) {
 
   return (
     <article className="max-w-4xl mx-auto">
+      <motion.div 
+    initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+    className="space-y-12">
       {/* Blog Header */}
       <header className="mb-12">
         <div className="flex items-center gap-4 mb-6 text-sm text-white/60">
@@ -93,6 +100,7 @@ export default async function BlogPost({ params }) {
           </div>
         </div>
       </footer>
+      </motion.div>
     </article>
   );
 } 

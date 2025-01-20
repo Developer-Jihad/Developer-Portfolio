@@ -12,7 +12,10 @@ export default function BlogGrid({ blogs }) {
     : blogs.filter(blog => blog.category.toLowerCase() === activeCategory);
 
   return (
-    <div className="space-y-12">
+    <motion.div 
+    initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+    className="space-y-12">
       {/* Category Filter */}
       <div className="sticky top-0 z-10 bg-gradient-to-b from-black/80 to-black/0 backdrop-blur-xl py-4">
         <CategoryFilter 
@@ -43,6 +46,6 @@ export default function BlogGrid({ blogs }) {
           </motion.div>
         )}
       </motion.div>
-    </div>
+    </motion.div>
   );
 } 

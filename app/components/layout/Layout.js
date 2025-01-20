@@ -9,9 +9,9 @@ import { useScrollPosition } from '@/app/hooks/useScrollPosition';
 import { trackPageView } from '@/app/lib/analytics';
 
 const pageTransition = {
-  hidden: { opacity: 0, y: 20 },
+  // hidden: { opacity: 0, y: 20 },
   enter: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -20 }
+  // exit: { opacity: 0, y: -20 }
 };
 
 const Layout = ({ children }) => {
@@ -33,11 +33,11 @@ const Layout = ({ children }) => {
       <AnimatePresence mode="wait">
         <motion.main
           key={pathname}
-          initial="hidden"
+          // initial="hidden"
           animate="enter"
-          exit="exit"
+          // exit="exit"
           variants={pageTransition}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0 }}
           className="pt-20 pb-16 container mx-auto px-4 sm:px-6 lg:px-8"
         >
           <Suspense fallback={<LoadingSpinner />}>

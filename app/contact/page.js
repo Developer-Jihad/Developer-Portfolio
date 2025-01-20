@@ -1,4 +1,5 @@
-"use client";
+"use client"
+import { motion } from "framer-motion";
 import dynamic from 'next/dynamic';
 import ErrorBoundary from '../components/ui/ErrorBoundary';
 
@@ -12,7 +13,9 @@ const SocialLinks = dynamic(() => import('../components/contact/SocialLinks'));
 const ContactPage = () => {
   return (
     <div className="min-h-screen overflow-hidden">
-      <div className="container mx-auto relative">
+      <motion.div 
+    initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }} className="container mx-auto relative">
         {/* Header Section */}
         <header className="max-w-4xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6">
@@ -30,7 +33,8 @@ const ContactPage = () => {
         </header>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-3 gap-6 md:gap-8">
+        <div
+        className="grid lg:grid-cols-3 gap-6 md:gap-8">
           <ErrorBoundary>
             <aside className="lg:col-span-1">
               <ContactInfo />
@@ -46,7 +50,7 @@ const ContactPage = () => {
             </main>
           </ErrorBoundary>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
